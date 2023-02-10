@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Alura MIDI</title>
+  <title>Vanilla JS BeatMaker - MIDI</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
 
 <body>
 
-  <h1>Alura Midi</h1>
+  <h1>Vanilla JS BeatMaker - MIDI</h1>
 
   <section class="teclado">
     <button class="tecla tecla_pom">Pom</button>
@@ -35,16 +35,16 @@
     <button class="tecla tecla_tic">Tic</button>
     <button class="tecla tecla_tom">Tom</button>
   </section>
-  <button id="play" style="margin-top: 30px; background: #fff; padding: 10px 30px; border-radius: 10px;">Tocar música criada via Javascript</button>
-  <audio src="sounds/keyq.wav" id="som_tecla_pom"></audio>
-  <audio src="sounds/keyw.wav" id="som_tecla_clap"></audio>
-  <audio src="sounds/keye.wav" id="som_tecla_tim"></audio>
-  <audio src="sounds/keya.wav" id="som_tecla_puff"></audio>
-  <audio src="sounds/keys.wav" id="som_tecla_splash"></audio>
-  <audio src="sounds/keyd.wav" id="som_tecla_toim"></audio>
-  <audio src="sounds/keyz.wav" id="som_tecla_psh"></audio>
-  <audio src="sounds/keyx.wav" id="som_tecla_tic"></audio>
-  <audio src="sounds/keyc.wav" id="som_tecla_tom"></audio>
+  <button  class="play">Tocar música criada via Javascript</button>
+  <audio src="sounds/keyq.wav" id="som_tecla_pom" preload="auto"></audio>
+  <audio src="sounds/keyw.wav" id="som_tecla_clap" preload="auto"></audio>
+  <audio src="sounds/keye.wav" id="som_tecla_tim" preload="auto"></audio>
+  <audio src="sounds/keya.wav" id="som_tecla_puff" preload="auto"></audio>
+  <audio src="sounds/keys.wav" id="som_tecla_splash" preload="auto"></audio>
+  <audio src="sounds/keyd.wav" id="som_tecla_toim" preload="auto"></audio>
+  <audio src="sounds/keyz.wav" id="som_tecla_psh" preload="auto"></audio>
+  <audio src="sounds/keyx.wav" id="som_tecla_tic" preload="auto"></audio>
+  <audio src="sounds/keyc.wav" id="som_tecla_tom" preload="auto"></audio>
   <script src="./scripts/main.js"></script>
 </body>
 

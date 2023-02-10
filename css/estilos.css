@@ -8,7 +8,7 @@
 
 body {
   align-items: center;
-  background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%);
+  background: linear-gradient(45deg, #a7cfdf 0%, #23538a 100%);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -23,7 +23,7 @@ h1 {
 }
 
 .teclado {
-  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+  background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%);
   box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
   border-radius: 30px;
   display: grid;
@@ -49,7 +49,7 @@ h1 {
 .tecla.ativa,
 .tecla:active {
   background-color: var(--vermelha);
-  border: 4px solid  var(--vermelha);
+  border: 4px solid var(--vermelha);
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
   color: var(--branca);
   outline: none;
@@ -64,4 +64,17 @@ h1 {
 .tecla.active:focus,
 .tecla:active:focus {
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
+}
+
+.play {
+  margin-top: 30px;
+  background: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  /* box-shadow: 0 10px 0 0.1px; */
+  transition: box-shadow .2s ease 0s;
+}
+
+.play .clicked {
+  box-shadow: 0 0 0 0;
 }
